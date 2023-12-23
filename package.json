@@ -1,0 +1,19 @@
+{
+  "name": "new-personal-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "commit": "git cz"
+  },
+  "dependencies": {
+    "astro": "^4.0.7"
+  },
+  "devDependencies": {
+    "git-cz": "^4.9.0"
+  }
+}
