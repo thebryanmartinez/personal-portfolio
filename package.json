@@ -11,9 +11,13 @@
     "commit": "git cz"
   },
   "dependencies": {
-    "astro": "^4.0.7"
+    "@fontsource/be-vietnam-pro": "^5.0.18",
+    "@iconify-json/mdi": "^1.1.64",
+    "astro": "^4.0.7",
+    "astro-icon": "^1.1.0"
   },
   "devDependencies": {
-    "git-cz": "^4.9.0"
+    "git-cz": "^4.9.0",
+    "prettier": "^3.2.5"
   }
 }
