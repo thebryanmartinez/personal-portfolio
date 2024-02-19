@@ -1,0 +1,58 @@
+<header class="header">
+  <nav class="navigation">
+    <p class="navigation--title">
+      BRYAN MARTINEZ
+    </p>
+    <ul class="navigation--links">
+      <li class="links--link"><a class="link-tag" href="#">About</a></li>
+      <li class="links--link"><a class="link-tag" href="#">Projects</a></li>
+      <li class="links--link"><a class="link-tag" href="#">Experience</a></li>
+      <li class="links--link"><a class="link-tag" href="#">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <style> 
+    .header {
+      padding: 1rem 0px;
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navigation--links {
+      display: none;
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .navigation--title {
+      
+    }
+
+    .links--link {
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .link-tag {
+      text-decoration: none;
+      color: var(--heading);
+      font-weight: 600;
+    }
+
+    .link-tag:visited {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    @media (min-width: 480px) {
+      .navigation--links {
+        display: flex;
+      }
+    }
+  </style>

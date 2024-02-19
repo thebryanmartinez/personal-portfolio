@@ -1,0 +1,61 @@
+---
+import { Icon } from "astro-icon/components"
+
+interface Props {
+  text: string;
+  onPress: string;
+  icon: string;
+  type: 'primary' | 'secondary';
+}
+
+const {text, onPress, icon, type = 'primary'} = Astro.props;
+const style = type === 'primary' ? 'button--type-primary' : 'button--type-secondary';
+
+---
+
+<a class:list={['button', style]} href={onPress}>
+  {icon &&  <Icon name={icon}/>}
+  <p class="button--text">
+  {text}
+  </p>
+</a>
+
+<style>
+
+  .button {
+    padding: 0.5rem 0rem;
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    [data-icon] {
+      font-size: 1.5rem;
+    }
+  }
+
+  .button--type-primary {
+    color: var(--background);
+    background-color: var(--heading);
+     [data-icon] {
+     color: var(--background); 
+    }
+    .button--text {
+      color: var(--background)
+    }
+  }
+
+  .button--type-secondary {
+    color: var(--text);
+    background-color: var(--background);
+    border: 1px solid var(--text);
+    [data-icon] {
+     color: var(--text); 
+    }
+    .button--text {
+      color: var(--text)
+    }
+  }
+</style>
