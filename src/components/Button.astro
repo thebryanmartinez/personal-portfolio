@@ -1,27 +1,26 @@
 ---
-import { Icon } from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 
 interface Props {
   text: string;
   onPress: string;
   icon: string;
-  type: 'primary' | 'secondary';
+  type: "primary" | "secondary";
 }
 
-const {text, onPress, icon, type = 'primary'} = Astro.props;
-const style = type === 'primary' ? 'button--type-primary' : 'button--type-secondary';
-
+const { text, onPress, icon, type = "primary" } = Astro.props;
+const style =
+  type === "primary" ? "button--type-primary" : "button--type-secondary";
 ---
 
-<a class:list={['button', style]} href={onPress}>
-  {icon &&  <Icon name={icon}/>}
+<a class:list={["button", style]} href={onPress}>
+  {icon && <Icon name={icon} />}
   <p class="button--text">
-  {text}
+    {text}
   </p>
 </a>
 
 <style>
-
   .button {
     padding: 0.5rem 0rem;
     display: flex;
@@ -39,11 +38,11 @@ const style = type === 'primary' ? 'button--type-primary' : 'button--type-second
   .button--type-primary {
     color: var(--background);
     background-color: var(--heading);
-     [data-icon] {
-     color: var(--background); 
+    [data-icon] {
+      color: var(--background);
     }
     .button--text {
-      color: var(--background)
+      color: var(--background);
     }
   }
 
@@ -52,10 +51,10 @@ const style = type === 'primary' ? 'button--type-primary' : 'button--type-second
     background-color: var(--background);
     border: 1px solid var(--text);
     [data-icon] {
-     color: var(--text); 
+      color: var(--text);
     }
     .button--text {
-      color: var(--text)
+      color: var(--text);
     }
   }
 </style>

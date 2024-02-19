@@ -1,13 +1,17 @@
 ---
-import NavigationButton from '@/components/NavigationButton.astro'
+import NavigationButton from "@/components/NavigationButton.astro";
 ---
 
 <nav class="container">
   <ul class="links-container">
-    <NavigationButton text="About" icon="mdi:account-outline" url="#"/>
-    <NavigationButton text="Experience" icon="mdi:briefcase-outline" url="#"/>
-    <NavigationButton text="Projects" icon="mdi:application-brackets-outline" url="#"/>
-    <NavigationButton text="Contact" icon="mdi:message-outline" url="#"/>
+    <NavigationButton text="About" icon="mdi:account-outline" url="#" />
+    <NavigationButton text="Experience" icon="mdi:briefcase-outline" url="#" />
+    <NavigationButton
+      text="Projects"
+      icon="mdi:application-brackets-outline"
+      url="#"
+    />
+    <NavigationButton text="Contact" icon="mdi:message-outline" url="#" />
   </ul>
 </nav>
 
@@ -17,7 +21,7 @@ import NavigationButton from '@/components/NavigationButton.astro'
     position: fixed;
     bottom: 0;
     left: 0;
-    border: 1px solid var(--heading)
+    border: 1px solid var(--heading);
   }
 
   .links-container {
@@ -35,6 +39,6 @@ import NavigationButton from '@/components/NavigationButton.astro'
   @media (min-width: 480px) {
     .container {
       display: none;
-     }
     }
+  }
 </style>

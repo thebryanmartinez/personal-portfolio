@@ -1,52 +1,67 @@
 ---
-import image from '@/assets/images/profile.webp'
-import { Image } from 'astro:assets';
-import Button from './Button.astro';
+import image from "@/assets/images/profile.webp";
+import { Image } from "astro:assets";
+import Button from "./Button.astro";
 ---
 
 <section class="hero">
   <article class="hero--text">
     <h1>Hello! I'm Bryan, a frontend software engineer.</h1>
     <div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur. Rutrum est aliquet sed eu nunc at id tempus magna. Fusce adipiscing nunc viverra turpis. Mus egestas sodales amet accumsan. Tristique id consectetur nisl metus. Morbi vestibulum lectus at volutpat in sit pulvinar fermentum. Sagittis vivamus nullam augue aliquam enim placerat turpis massa.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur. <span id="myElement">Rutrum</span> est aliquet sed eu nunc at id tempus magna. Fusce adipiscing nunc viverra turpis. Mus egestas sodales amet accumsan. Tristique id consectetur nisl metus. Morbi vestibulum lectus at volutpat?
-    </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Rutrum est aliquet sed eu nunc
+        at id tempus magna. Fusce adipiscing nunc viverra turpis. Mus egestas
+        sodales amet accumsan. Tristique id consectetur nisl metus. Morbi
+        vestibulum lectus at volutpat in sit pulvinar fermentum. Sagittis
+        vivamus nullam augue aliquam enim placerat turpis massa.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. <span id="myElement"
+          >Rutrum</span
+        > est aliquet sed eu nunc at id tempus magna. Fusce adipiscing nunc viverra
+        turpis. Mus egestas sodales amet accumsan. Tristique id consectetur nisl
+        metus. Morbi vestibulum lectus at volutpat?
+      </p>
     </div>
     <div class="buttons--container">
-      <Button text='View Resume' onPress='#' type="primary" onPress='#'/>
-      <Button text='View Github' onPress='#' type="secondary" onPress="#"/>
+      <Button text="View Resume" onPress="#" type="primary" onPress="#" />
+      <Button text="View Github" onPress="#" type="secondary" onPress="#" />
     </div>
   </article>
-  <Image loading="eager" class="hero--image" src={image} alt="Profile picture of Bryan Martinez" width={400} height={480}>
+  <Image
+    loading="eager"
+    class="hero--image"
+    src={image}
+    alt="Profile picture of Bryan Martinez"
+    width={400}
+    height={480}
+  />
+
+  <style>
+    .hero {
+      width: "100%";
+      display: flex;
+      flex-direction: row;
+      gap: 8rem;
+    }
+
+    .hero--text {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero--image {
+      flex: 1;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .buttons--container {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  </style>
 </section>
-
-<style>
-  .hero {
-    width: '100%';
-    display: flex;
-    flex-direction: row;
-    gap: 8rem;
-  }
-
-  .hero--text {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hero--image {
-    flex: 1;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .buttons--container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-</style>

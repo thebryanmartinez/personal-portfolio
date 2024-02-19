@@ -1,21 +1,19 @@
 ---
 import { Icon } from "astro-icon/components";
-const {url, text, icon} = Astro.props
-
+const { url, text, icon } = Astro.props;
 ---
 
 <a class="button" href={url}>
-  <Icon name={icon}/>
+  <Icon name={icon} />
   <p class="button-text">
     {text}
   </p>
 </a>
 
 <style>
-
-[data-icon] {
-  font-size: 1.5rem;
-}
+  [data-icon] {
+    font-size: 1.5rem;
+  }
 
   .button {
     color: var(--heading);
@@ -27,6 +25,4 @@ const {url, text, icon} = Astro.props
     height: 100%;
     width: 100%;
   }
-
-  
 </style>
