@@ -1,14 +1,14 @@
 {
   "name": "new-personal-portfolio",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "commit": "git cz",
+    "commit": "git add . && git cz",
     "format": "npx prettier . --write"
   },
   "dependencies": {

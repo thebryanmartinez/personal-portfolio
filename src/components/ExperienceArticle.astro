@@ -1,0 +1,28 @@
+---
+interface Props {
+  institution: string;
+  role: string;
+  description: string;
+  startYear: string;
+  endYear: string;
+}
+
+const { institution, role, description, startYear, endYear } = Astro.props;
+---
+
+<article>
+  <div class="experience--header">
+    <h3>{institution}</h3>
+    <p>{startYear} - {endYear}</p>
+  </div>
+  <h4>{role}</h4>
+  <p>{description}</p>
+</article>
+
+<style>
+  .experience--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>

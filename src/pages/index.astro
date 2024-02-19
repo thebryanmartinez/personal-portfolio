@@ -1,16 +1,26 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import HeroSection from "@/components/HeroSection.astro";
+import HeroSection from "@/components/sections/Hero.astro";
 import Navigation from "@/components/Navigation.astro";
 import MobileNavigation from "@/components/MobileNavigation.astro";
+import Experience from "@/components/sections/Experience.astro";
 ---
 
 <Layout title="Bryan Martinez Portfolio">
   <main>
     <Navigation />
-    <HeroSection />
+    <div class="sections">
+      <HeroSection />
+      <Experience />
+    </div>
     <MobileNavigation />
   </main>
 </Layout>
 
-<style></style>
+<style>
+  .sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+</style>

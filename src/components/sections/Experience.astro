@@ -1,0 +1,55 @@
+---
+import ExperienceArticle from "@/components/ExperienceArticle.astro";
+---
+
+<section id="experience">
+  <h2>Experience and education</h2>
+
+  <div class="container">
+    <div class="experience--section">
+      <ExperienceArticle
+        institution="Hello Iconic"
+        role="Frontend Software Engineer"
+        endYear="Today"
+        startYear="2023"
+        description="Lorem ipsum dolor sit amet consectetur. Sapien adipiscing nibh tortor dictumst vulputate aliquet pharetra pellentesque tortor. Sed gravida nec a cursus eget. Arcu fermentum ultrices amet volutpat. A facilisi egestas iaculis fermentum at lobortis."
+      />
+      <ExperienceArticle
+        institution="Hello Iconic"
+        role="QA Software Engineer - Internship"
+        endYear="2023"
+        startYear="2022"
+        description="Lorem ipsum dolor sit amet consectetur. Sapien adipiscing nibh tortor dictumst vulputate aliquet pharetra pellentesque tortor. Sed gravida nec a cursus eget. Arcu fermentum ultrices amet volutpat. A facilisi egestas iaculis fermentum at lobortis."
+      />
+    </div>
+    <div class="experience--section align-end">
+      <ExperienceArticle
+        institution="Universidad Catolica de Honduras"
+        role="Computer Science Engineer degree"
+        endYear="2018"
+        startYear="2023"
+        description="Lorem ipsum dolor sit amet consectetur. Sapien adipiscing nibh tortor dictumst vulputate aliquet pharetra pellentesque tortor. Sed gravida nec a cursus eget. Arcu fermentum ultrices amet volutpat. A facilisi egestas iaculis fermentum at lobortis."
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+
+  .experience--section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .align-end {
+    /* justify-self: end; */
+  }
+</style>
