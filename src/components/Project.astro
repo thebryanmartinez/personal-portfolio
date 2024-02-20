@@ -1,0 +1,69 @@
+---
+interface Props {
+  image?: ImageMetadata;
+  title: string;
+  imageAlt: string;
+  description: string;
+  projectHref
+}
+
+const {
+  image,
+  title,
+  imageAlt,
+  description,
+  projectHref,
+} = Astro.props;
+
+import { Image } from "astro:assets";
+import Badge from "@/components/Badge.astro";
+import ComingSoon from '@/components/ComingSoon.astro'
+---
+
+<article class="project">
+  <a href={projectHref} class="link">
+    <div class="image--container">
+      {image ? <Image class="image" src={image} alt={imageAlt}  /> : <ComingSoon/> }
+    </div>
+    <div class="badge--container">
+      <Badge text="React" backgroundColor="blue" />
+      <Badge text="React" backgroundColor="blue" />
+      <Badge text="React" backgroundColor="blue" />
+    </div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <p class="read-more">Read More ></p>
+  </a>
+</article>
+
+<style>
+  .link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image--container {
+    height: 300px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .read-more {
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: 1rem;
+  }
+
+  .badge--container {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0rem;
+    flex-wrap: wrap;
+  }
+</style>

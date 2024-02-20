@@ -1,0 +1,36 @@
+---
+import {Icon} from 'astro-icon/components'
+---
+
+<div class="comingsoon--container">
+  <Icon class="comingsoon--icon" name='mdi:progress-wrench' />
+  <p class="comingsoon--text">
+    Coming Soon
+  </p>
+</div>
+
+<style>
+
+  .comingsoon--container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 1rem;
+  }
+
+  .comingsoon--icon {
+    font-size: 4rem; 
+    color: var(--heading);
+  }
+
+  .comingsoon--text {
+    font-size: 2rem;
+  }
+
+  
+</style>
