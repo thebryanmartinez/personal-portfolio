@@ -1,0 +1,85 @@
+---
+import Button from "@/components/Button.astro";
+import SkillIcon from "@/components/SkillIcon.astro";
+---
+
+<section id="experience" class="contact-me">
+  <article class="contact-me--section">
+    <h2 class="contact-me--title">Skills</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+      necessitatibus! Corporis voluptatibus id officia accusamus voluptate nemo
+      at similique! Doloribus provident in modi ipsum odit ad mollitia iste
+      blanditiis itaque!
+    </p>
+    <div class="contact-me--skills">
+      <SkillIcon icon="mdi:react" text="React" />
+      <SkillIcon icon="mdi:react" text="React Native" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+      <SkillIcon icon="mdi:language-css3" text="CSS" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+      necessitatibus! Corporis voluptatibus id officia accusamus voluptate nemo
+      at similique!
+    </p>
+    <div class="contact-me--skills">
+      <SkillIcon icon="mdi:account-voice" text="English (C1)" />
+      <SkillIcon icon="mdi:account-voice" text="Spanish (Native)" />
+    </div>
+  </article>
+  <article class="contact-me--section">
+    <h2 class="contact-me--title">Contact me</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+      necessitatibus! Corporis voluptatibus id officia accusamus voluptate nemo
+      at similique! Doloribus provident in modi ipsum odit ad mollitia iste
+      blanditiis itaque!
+    </p>
+    <div class="contact-me--buttons">
+      <Button onPress="#" type="secondary" text="Send me an email" />
+      <Button onPress="#" type="secondary" text="View my LinkedIn" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+      necessitatibus! Corporis voluptatibus id officia accusamus voluptate nemo
+      at similique! Doloribus provident in modi ipsum odit ad mollitia iste
+      blanditiis itaque!
+    </p>
+  </article>
+</section>
+
+<style>
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .contact-me--section {
+    display: grid;
+    place-items: center;
+  }
+
+  .contact-me--title {
+    margin-bottom: 2rem;
+  }
+
+  .contact-me--buttons {
+    margin: 2rem 0rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact-me--skills {
+    display: grid;
+    width: 100%;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+  }
+</style>

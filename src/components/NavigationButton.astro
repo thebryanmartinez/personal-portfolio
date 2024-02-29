@@ -1,5 +1,12 @@
 ---
 import { Icon } from "astro-icon/components";
+
+interface Props {
+  url: string;
+  text: string;
+  icon: string;
+}
+
 const { url, text, icon } = Astro.props;
 ---
 

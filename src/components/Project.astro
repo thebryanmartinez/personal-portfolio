@@ -4,26 +4,26 @@ interface Props {
   title: string;
   imageAlt: string;
   description: string;
-  projectHref
+  projectHref;
 }
 
-const {
-  image,
-  title,
-  imageAlt,
-  description,
-  projectHref,
-} = Astro.props;
+const { image, title, imageAlt, description, projectHref } = Astro.props;
 
 import { Image } from "astro:assets";
 import Badge from "@/components/Badge.astro";
-import ComingSoon from '@/components/ComingSoon.astro'
+import ComingSoon from "@/components/ComingSoon.astro";
 ---
 
 <article class="project">
   <a href={projectHref} class="link">
     <div class="image--container">
-      {image ? <Image class="image" src={image} alt={imageAlt}  /> : <ComingSoon/> }
+      {
+        image ? (
+          <Image class="image" src={image} alt={imageAlt} />
+        ) : (
+          <ComingSoon />
+        )
+      }
     </div>
     <div class="badge--container">
       <Badge text="React" backgroundColor="blue" />
