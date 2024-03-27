@@ -13,7 +13,7 @@ const style =
   type === "primary" ? "button--type-primary" : "button--type-secondary";
 ---
 
-<a class:list={["button", style]} href={onPress}>
+<a class:list={["button", style]} href={onPress} target="_blank">
   {icon && <Icon name={icon} />}
   <p class="button--text">
     {text}
