@@ -15,7 +15,7 @@ const { institution, role, description, startYear, endYear } = Astro.props;
     <h3>{institution}</h3>
     <p>{startYear} - {endYear}</p>
   </div>
-  <h4>{role}</h4>
+  <h4 class="experience--role">{role}</h4>
   <p>{description}</p>
 </article>
 
@@ -24,5 +24,9 @@ const { institution, role, description, startYear, endYear } = Astro.props;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .experience--role {
+    margin-bottom: 1rem;
   }
 </style>

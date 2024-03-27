@@ -18,10 +18,9 @@ const { icon, text } = Astro.props;
 
 <style>
   .icon--container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
+    align-items: start;
     margin-top: 2rem;
   }
 
@@ -30,5 +29,6 @@ const { icon, text } = Astro.props;
   }
 
   .icon--text {
+    text-align: center;
   }
 </style>

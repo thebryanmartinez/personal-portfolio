@@ -22,7 +22,7 @@ import ExperienceArticle from "@/components/ExperienceArticle.astro";
         description="Lorem ipsum dolor sit amet consectetur. Sapien adipiscing nibh tortor dictumst vulputate aliquet pharetra pellentesque tortor. Sed gravida nec a cursus eget. Arcu fermentum ultrices amet volutpat. A facilisi egestas iaculis fermentum at lobortis."
       />
     </div>
-    <div class="experience--section align-end">
+    <div class="experience--section">
       <ExperienceArticle
         institution="Universidad Catolica de Honduras"
         role="Computer Science Engineer degree"
@@ -41,6 +41,10 @@ import ExperienceArticle from "@/components/ExperienceArticle.astro";
     gap: 8rem;
     margin-top: 2rem;
     justify-content: space-between;
+    @media (max-width: 601px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
   }
 
   .experience--section {

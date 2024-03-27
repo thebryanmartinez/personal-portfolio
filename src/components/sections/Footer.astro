@@ -6,8 +6,12 @@
   .footer {
     margin-top: 4rem;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media (max-width: 601px) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  p {
+    text-align: center;
   }
 </style>

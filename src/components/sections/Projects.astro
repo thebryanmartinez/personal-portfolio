@@ -8,7 +8,7 @@ import TodoListImage from "@/assets/images/todo-list-project.png";
   <h4>Here are some projects I’ve made</h4>
 
   <div class="container">
-    <div class="experience--section">
+    <div class="projects--section">
       <Project
         title="Project name"
         image={TodoListImage}
@@ -17,7 +17,7 @@ import TodoListImage from "@/assets/images/todo-list-project.png";
       />
     </div>
 
-    <div class="experience--section">
+    <div class="projects--section">
       <Project
         title="Project name"
         imageAlt="Image of project name"
@@ -34,8 +34,13 @@ import TodoListImage from "@/assets/images/todo-list-project.png";
     gap: 8rem;
     margin-top: 2rem;
     justify-content: space-between;
+
+    @media (max-width: 601px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
   }
-  .experience--section {
+  .projects--section {
     display: flex;
     flex-direction: column;
     gap: 4rem;

@@ -9,8 +9,7 @@ import SkillIcon from "@/components/SkillIcon.astro";
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
       necessitatibus! Corporis voluptatibus id officia accusamus voluptate nemo
-      at similique! Doloribus provident in modi ipsum odit ad mollitia iste
-      blanditiis itaque!
+      at similique!
     </p>
     <div class="contact-me--skills">
       <SkillIcon icon="mdi:react" text="React" />
@@ -56,13 +55,19 @@ import SkillIcon from "@/components/SkillIcon.astro";
 <style>
   .contact-me {
     display: flex;
-    flex-direction: row;
-    gap: 4rem;
+    align-items: start;
+    justify-content: space-between;
+    gap: 8rem;
+    @media (max-width: 601px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
   }
 
   .contact-me--section {
     display: grid;
     place-items: center;
+    flex: 1;
   }
 
   .contact-me--title {
@@ -73,6 +78,10 @@ import SkillIcon from "@/components/SkillIcon.astro";
     margin: 2rem 0rem;
     display: flex;
     gap: 1rem;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
   }
 
   .contact-me--skills {
@@ -81,5 +90,13 @@ import SkillIcon from "@/components/SkillIcon.astro";
     margin-bottom: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: row;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 </style>
