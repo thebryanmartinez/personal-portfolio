@@ -44,17 +44,31 @@ const style =
     .button--text {
       color: var(--background);
     }
+    &:hover {
+      background-color: var(--text);
+    }
+    &:active {
+      background-color: var(--text);
+      transform: scale(0.97);
+    }
   }
 
   .button--type-secondary {
     color: var(--text);
     background-color: var(--background);
-    border: 1px solid var(--text);
+    border: 1px solid var(--gray);
     [data-icon] {
       color: var(--text);
     }
     .button--text {
       color: var(--text);
+    }
+    &:hover {
+      background-color: var(--background-hover);
+    }
+    &:active {
+      background-color: var(--background-hover);
+      transform: scale(0.97);
     }
   }
 </style>
