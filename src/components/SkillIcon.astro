@@ -1,0 +1,34 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  icon: string;
+  text: string;
+}
+
+const { icon, text } = Astro.props;
+---
+
+<div class="icon--container">
+  <Icon class="icon" name={icon} />
+  <p class="icon--text">
+    {text}
+  </p>
+</div>
+
+<style>
+  .icon--container {
+    display: grid;
+    place-items: center;
+    align-items: start;
+    margin-top: 2rem;
+  }
+
+  [data-icon] {
+    font-size: 1.5rem;
+  }
+
+  .icon--text {
+    text-align: center;
+  }
+</style>

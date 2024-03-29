@@ -1,0 +1,58 @@
+---
+interface Props {
+  text: string;
+  backgroundColor: "purple" | "pink" | "blue" | "yellow";
+}
+
+const { text, backgroundColor } = Astro.props;
+
+let backgroundClass;
+
+switch (backgroundColor) {
+  case "purple":
+    backgroundClass = "badge--color-purple";
+    break;
+  case "pink":
+    backgroundClass = "badge--color-pink";
+
+    break;
+  case "blue":
+    backgroundClass = "badge--color-blue";
+    break;
+
+  case "yellow":
+    backgroundClass = "badge--color-yellow";
+    break;
+}
+---
+
+<div class:list={["badge", backgroundClass]}>
+  <p class="badge--text">{text}</p>
+</div>
+
+<style>
+  .badge {
+    padding: 0rem 1rem;
+    border-radius: 20px;
+    width: max-content;
+  }
+
+  .badge--color-purple {
+    background-color: var(--purple-pastel);
+  }
+
+  .badge--color-pink {
+    background-color: var(--pink-pastel);
+  }
+
+  .badge--color-blue {
+    background-color: var(--blue-pastel);
+  }
+
+  .badge--color-yellow {
+    background-color: var(--yellow-pastel);
+  }
+
+  .badge--text {
+  }
+</style>

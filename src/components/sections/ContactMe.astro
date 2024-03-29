@@ -1,0 +1,117 @@
+---
+import Button from "@/components/Button.astro";
+import SkillIcon from "@/components/SkillIcon.astro";
+---
+
+<section id="contact-me" class="contact-me">
+  <article class="contact-me--section">
+    <h2 class="contact-me--title">Skills</h2>
+    <p>
+      As a software developer, my technical expertise lies in a diverse range of
+      tools, languages, and frameworks that enable me to bring digital solutions
+      to life. Here are some of my key technical skills:
+    </p>
+    <div class="contact-me--skills">
+      <SkillIcon icon="mdi:react" text="React" />
+      <SkillIcon icon="mdi:react" text="React Native" />
+      <SkillIcon icon="mdi:language-css3" text="CSS3" />
+      <SkillIcon icon="mdi:language-javascript" text="JavaScript" />
+      <SkillIcon icon="mdi:language-typescript" text="TypeScript" />
+      <SkillIcon icon="mdi:language-html5" text="HTML5" />
+      <SkillIcon icon="mdi:git" text="Git and Github" />
+      <SkillIcon icon="mdi:tailwind" text="Tailwind CSS" />
+    </div>
+    <p>
+      Beyond technical skills, effective software development relies on strong
+      interpersonal abilities. Here are some of my key soft skills:
+    </p>
+    <div class="contact-me--skills">
+      <SkillIcon icon="mdi:account-voice" text="English (C1)" />
+      <SkillIcon icon="mdi:account-voice" text="Spanish (Native)" />
+      <SkillIcon icon="mdi:search" text="Attention to detail" />
+      <SkillIcon icon="mdi:people-group" text="Leadership" />
+    </div>
+  </article>
+  <article class="contact-me--section">
+    <h2 class="contact-me--title">Contact me</h2>
+    <p>
+      Have a question, a project in mind, or need a software developer? I'd love
+      to hear from you! Feel free to reach out through my LinkedIn or my email:
+    </p>
+    <div class="contact-me--buttons">
+      <Button
+        onPress="https://www.linkedin.com/in/thebryanmartinez/"
+        type="primary"
+        text="Connect on LinkedIn"
+      />
+      <Button
+        onPress="mailto:bryanmartz972@gmail.com"
+        type="secondary"
+        text="Send me an email"
+      />
+    </div>
+    <p>
+      I'm always eager to explore new opportunities and collaborate on exciting
+      projects. Don't hesitate to reach out—I'm looking forward to connecting
+      with you! If you're interested in exploring more of my work, you can check
+      my Github profile for a list of my projects.
+    </p>
+
+    <div class="contact-me--buttons">
+      <Button
+        onPress="https://github.com/thebryanmartinez"
+        type="secondary"
+        text="Explore my Github"
+      />
+    </div>
+  </article>
+
+  <style>
+    .contact-me {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 8rem;
+      @media (max-width: 601px) {
+        flex-direction: column;
+        gap: 4rem;
+      }
+    }
+
+    .contact-me--section {
+      display: grid;
+      place-items: center;
+      flex: 1;
+    }
+
+    .contact-me--title {
+      margin-bottom: 2rem;
+    }
+
+    .contact-me--buttons {
+      margin: 2rem 0rem;
+      display: flex;
+      gap: 1rem;
+
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
+    }
+
+    .contact-me--skills {
+      display: grid;
+      width: 100%;
+      margin-bottom: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-flow: row;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 450px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</section>

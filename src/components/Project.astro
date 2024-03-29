@@ -1,0 +1,83 @@
+---
+interface Props {
+  image?: ImageMetadata;
+  title: string;
+  imageAlt: string;
+  description: string;
+  tags: Tag[];
+  projectHref: string;
+}
+
+interface Tag {
+  text: string;
+  backgroundColor: "purple" | "pink" | "blue" | "yellow";
+}
+
+const { image, title, imageAlt, description, projectHref, tags } = Astro.props;
+
+import { Image } from "astro:assets";
+import Badge from "@/components/Badge.astro";
+import ComingSoon from "@/components/ComingSoon.astro";
+---
+
+<article class="project">
+  <a href={projectHref} class="link" target="_blank">
+    <div class="image--container">
+      {
+        image ? (
+          <Image class="image" src={image} alt={imageAlt} />
+        ) : (
+          <ComingSoon />
+        )
+      }
+    </div>
+    <div class="badge--container">
+      {
+        tags
+          ? tags.map((tag) => (
+              <Badge text={tag.text} backgroundColor={tag.backgroundColor} />
+            ))
+          : null
+      }
+    </div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </a>
+</article>
+
+<style>
+  .link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image--container {
+    height: 300px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image:hover {
+    transform: scale(1.05);
+  }
+
+  .read-more {
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: 1rem;
+  }
+
+  .badge--container {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0rem;
+    flex-wrap: wrap;
+  }
+</style>

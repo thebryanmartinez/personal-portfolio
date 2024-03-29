@@ -1,0 +1,34 @@
+---
+interface Props {
+  institution: string;
+  role: string;
+  bulletPoints: string[];
+  startYear: string;
+  endYear: string;
+}
+
+const { institution, role, bulletPoints, startYear, endYear } = Astro.props;
+---
+
+<article>
+  <div class="experience--header">
+    <h3>{institution}</h3>
+    <p>{startYear} - {endYear}</p>
+  </div>
+  <h4 class="experience--role">{role}</h4>
+  <ul>
+    {bulletPoints.map((bulletPoint) => <li>{bulletPoint}</li>)}
+  </ul>
+</article>
+
+<style>
+  .experience--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .experience--role {
+    margin-bottom: 1rem;
+  }
+</style>

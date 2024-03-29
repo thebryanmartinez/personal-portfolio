@@ -1,19 +1,26 @@
 {
   "name": "new-personal-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "npm run dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "commit": "git cz"
+    "commit": "npx prettier . --write && git add . && git cz",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
-    "astro": "^4.0.7"
+    "@fontsource/be-vietnam-pro": "^5.0.18",
+    "@iconify-json/mdi": "^1.1.64",
+    "astro": "^4.4.4",
+    "astro-icon": "^1.1.0"
   },
   "devDependencies": {
-    "git-cz": "^4.9.0"
+    "@astrojs/partytown": "^2.0.4",
+    "git-cz": "^4.9.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
   }
 }
