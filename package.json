@@ -1,7 +1,7 @@
 {
   "name": "new-personal-portfolio",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "npm run dev",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.0.18",
     "@iconify-json/mdi": "^1.1.64",
+    "@vercel/speed-insights": "^1.0.10",
     "astro": "^4.4.4",
     "astro-icon": "^1.1.0"
   },

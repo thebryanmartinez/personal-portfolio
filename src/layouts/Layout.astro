@@ -29,15 +29,12 @@ import "@/common/constants/theme.css";
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-DLJDBQHTS7"></script>
     <script type="text/partytown">
-      var host = window.location.hostname;
-      if (host != "localhost") {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-DLJDBQHTS7");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
+      gtag("config", "G-DLJDBQHTS7");
     </script>
     <title>{title}</title>
   </head>
