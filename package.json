@@ -1,9 +1,9 @@
 {
   "name": "new-personal-portfolio",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
-    "dev": "astro dev --host",
+    "dev": "astro dev",
     "start": "npm run dev",
     "build": "astro build",
     "preview": "astro preview",

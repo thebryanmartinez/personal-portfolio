@@ -4,10 +4,16 @@ interface Props {
   title: string;
   imageAlt: string;
   description: string;
-  projectHref;
+  tags: Tag[];
+  projectHref: string;
 }
 
-const { image, title, imageAlt, description, projectHref } = Astro.props;
+interface Tag {
+  text: string;
+  backgroundColor: "purple" | "pink" | "blue" | "yellow";
+}
+
+const { image, title, imageAlt, description, projectHref, tags } = Astro.props;
 
 import { Image } from "astro:assets";
 import Badge from "@/components/Badge.astro";
@@ -15,7 +21,7 @@ import ComingSoon from "@/components/ComingSoon.astro";
 ---
 
 <article class="project">
-  <a href={projectHref} class="link">
+  <a href={projectHref} class="link" target="_blank">
     <div class="image--container">
       {
         image ? (
@@ -26,13 +32,16 @@ import ComingSoon from "@/components/ComingSoon.astro";
       }
     </div>
     <div class="badge--container">
-      <Badge text="React" backgroundColor="blue" />
-      <Badge text="React" backgroundColor="blue" />
-      <Badge text="React" backgroundColor="blue" />
+      {
+        tags
+          ? tags.map((tag) => (
+              <Badge text={tag.text} backgroundColor={tag.backgroundColor} />
+            ))
+          : null
+      }
     </div>
     <h3>{title}</h3>
     <p>{description}</p>
-    <!-- <p class="read-more">Read More ></p> -->
   </a>
 </article>
 
@@ -52,6 +61,11 @@ import ComingSoon from "@/components/ComingSoon.astro";
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image:hover {
+    transform: scale(1.05);
   }
 
   .read-more {

@@ -10,18 +10,16 @@ import TodoListImage from "@/assets/images/todo-list-project.webp";
   <div class="container">
     <div class="projects--section">
       <Project
-        title="Project name"
+        title="Todify • Todo List"
         image={TodoListImage}
-        imageAlt="Image of project name"
-        description="Lorem ipsum dolor sit amet consectetur. At magna viverra fringilla elementum malesuada neque praesent nunc. Velit felis neque sed sit adipiscing donec. Vitae viverra parturient habitasse suspendisse scelerisque fringilla mauris tristique tortor."
-      />
-    </div>
-
-    <div class="projects--section">
-      <Project
-        title="Project name"
-        imageAlt="Image of project name"
-        description="Lorem ipsum dolor sit amet consectetur. At magna viverra fringilla elementum malesuada neque praesent nunc. Velit felis neque sed sit adipiscing donec. Vitae viverra parturient habitasse suspendisse scelerisque fringilla mauris tristique tortor."
+        imageAlt="Image of the Todo List project"
+        description="Built a user-friendly todo list app using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to create, mark as done, and delete tasks directly in their browsers. Simplifies task management with an intuitive interface for efficient organization."
+        tags={[
+          { text: "React", backgroundColor: "blue" },
+          { text: "Tailwind CSS", backgroundColor: "pink" },
+          { text: "IndexedDB", backgroundColor: "yellow" },
+        ]}
+        projectHref="https://thebryanmartinez.github.io/todo-list/"
       />
     </div>
   </div>

@@ -2,12 +2,12 @@
 interface Props {
   institution: string;
   role: string;
-  description: string;
+  bulletPoints: string[];
   startYear: string;
   endYear: string;
 }
 
-const { institution, role, description, startYear, endYear } = Astro.props;
+const { institution, role, bulletPoints, startYear, endYear } = Astro.props;
 ---
 
 <article>
@@ -16,7 +16,9 @@ const { institution, role, description, startYear, endYear } = Astro.props;
     <p>{startYear} - {endYear}</p>
   </div>
   <h4 class="experience--role">{role}</h4>
-  <p>{description}</p>
+  <ul>
+    {bulletPoints.map((bulletPoint) => <li>{bulletPoint}</li>)}
+  </ul>
 </article>
 
 <style>

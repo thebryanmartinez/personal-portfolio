@@ -18,29 +18,39 @@ import Button from "@/components/Button.astro";
       />
       <h1>Hello! I'm Bryan, a frontend software engineer.</h1>
     </div>
-    <div>
+    <div class="hero--description-container">
       <p>
-        Lorem ipsum dolor sit amet consectetur. Rutrum est aliquet sed eu nunc
-        at id tempus magna. Fusce adipiscing nunc viverra turpis. Mus egestas
-        sodales amet accumsan. Tristique id consectetur nisl metus. Morbi
-        vestibulum lectus at volutpat in sit pulvinar fermentum. Sagittis
-        vivamus nullam augue aliquam enim placerat turpis massa.
+        My passion lies in building applications that not only meet users' needs
+        but exceed their expectations.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur. <span id="myElement"
-          >Rutrum</span
-        > est aliquet sed eu nunc at id tempus magna. Fusce adipiscing nunc viverra
-        turpis. Mus egestas sodales amet accumsan. Tristique id consectetur nisl
-        metus. Morbi vestibulum lectus at volutpat?
+        I believe in starting with the 'why'—the driving force behind every line
+        of code and design decision. For me, it's about more than just creating
+        user-friendly and innovative applications; it's about crafting
+        experiences that resonate deeply with users, keeping them coming back
+        for more.
+      </p>
+      <p>
+        By prioritizing clean code and continuous learning in UI/UX design, I
+        ensure that every application I develop has a strong core—one that
+        fosters success, satisfaction, and retention. Through my journey, I've
+        cultivated a working style rooted in flexibility, attention to detail,
+        and impeccable time management, allowing me to thrive in diverse team
+        environments.
+      </p>
+
+      <p>
+        Curious about how my development skills can benefit your company? Let's
+        connect and explore the possibilities of working together!
       </p>
     </div>
     <div class="buttons--container">
-      <Button text="View Resume" onPress="#" type="primary" />
       <Button
-        text="View Github"
-        onPress="https://github.com/thebryanmartinez"
-        type="secondary"
+        text="Connect on LinkedIn"
+        onPress="https://www.linkedin.com/in/thebryanmartinez/"
+        type="primary"
       />
+      <Button text="View resume" onPress="" type="secondary" />
     </div>
   </article>
   <div class="hero--image-container">
@@ -65,6 +75,11 @@ import Button from "@/components/Button.astro";
     @media (max-width: 768px) {
       flex-direction: column;
     }
+  }
+
+  .hero--description-container {
+    display: grid;
+    gap: 1rem;
   }
 
   .hero--text {
