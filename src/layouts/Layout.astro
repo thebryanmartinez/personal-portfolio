@@ -25,18 +25,21 @@ import "@/common/constants/theme.css";
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨🏻‍💻</text></svg>"
     />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
     <script
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-DLJDBQHTS7"></script>
     <script type="text/partytown">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+      var host = window.location.hostname;
+      if (host != "localhost") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-DLJDBQHTS7");
       }
-      gtag("js", new Date());
-      gtag("config", "G-DLJDBQHTS7");
     </script>
+    <title>{title}</title>
   </head>
   <body>
     <slot />
