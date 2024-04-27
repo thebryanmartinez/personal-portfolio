@@ -18,7 +18,8 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "astro": "^4.4.4",
-    "astro-icon": "^1.1.0"
+    "astro-icon": "^1.1.0",
+    "ninja-keys": "^1.2.2"
   },
   "devDependencies": {
     "@astrojs/partytown": "^2.0.4",
