@@ -9,25 +9,15 @@ import "@fontsource/be-vietnam-pro/400.css";
 import "@fontsource/be-vietnam-pro/600.css";
 import "@fontsource/be-vietnam-pro/700.css";
 import "@/common/constants/theme.css";
+import SpeedInsights from "@vercel/speed-insights/astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Bryan Martinez is a frontend software engineer with a passion for building user-friendly and innovative applications. He is proficient in React, React Native, and TypeScript, and has experience in various frontend frameworks and tools."
-    />
     <meta name="viewport" content="width=device-width" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨🏻‍💻</text></svg>"
-    />
-    <meta name="generator" content={Astro.generator} />
-    <script
-      type="text/partytown"
-      src="https://www.googletagmanager.com/gtag/js?id=G-DLJDBQHTS7"></script>
+    <title>{title}</title>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -36,10 +26,22 @@ import "@/common/constants/theme.css";
       gtag("js", new Date());
       gtag("config", "G-DLJDBQHTS7");
     </script>
-    <title>{title}</title>
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLJDBQHTS7"></script>
+    <meta
+      name="description"
+      content="Bryan Martinez is a frontend software engineer with a passion for building user-friendly and innovative applications. He is proficient in React, React Native, and TypeScript, and has experience in various frontend frameworks and tools."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨🏻‍💻</text></svg>"
+    />
+    <meta name="generator" content={Astro.generator} />
   </head>
   <body>
     <slot />
+    <SpeedInsights />
   </body>
 </html>
 

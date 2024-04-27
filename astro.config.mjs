@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
 import partytown from "@astrojs/partytown";
 
@@ -12,4 +13,8 @@ export default defineConfig({
       },
     }),
   ],
+  output: "server",
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
 });
