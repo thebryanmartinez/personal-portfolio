@@ -1,22 +1,27 @@
 ---
+import { default as strings } from "@/locales/en.json";
 import NavigationButton from "@/components/NavigationButton.astro";
 ---
 
 <nav class="container">
   <ul class="links-container">
-    <NavigationButton text="About" icon="mdi:account-outline" url="#about" />
     <NavigationButton
-      text="Experience"
+      text={strings.header.navigation.about}
+      icon="mdi:account-outline"
+      url="#about"
+    />
+    <NavigationButton
+      text={strings.header.navigation.experience}
       icon="mdi:briefcase-outline"
       url="#experience"
     />
     <NavigationButton
-      text="Projects"
+      text={strings.header.navigation.projects}
       icon="mdi:application-brackets-outline"
       url="#projects"
     />
     <NavigationButton
-      text="Contact"
+      text={strings.header.navigation.contact}
       icon="mdi:message-outline"
       url="#contact-me"
     />

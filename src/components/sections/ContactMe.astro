@@ -1,67 +1,79 @@
 ---
+import { default as strings } from "@/locales/en.json";
 import Button from "@/components/Button.astro";
 import SkillIcon from "@/components/SkillIcon.astro";
 ---
 
 <section id="contact-me" class="contact-me">
   <article class="contact-me--section">
-    <h2 class="contact-me--title">Skills</h2>
+    <h2 class="contact-me--title">{strings.skills.title}</h2>
     <p>
-      As a software developer, my technical expertise lies in a diverse range of
-      tools, languages, and frameworks that enable me to bring digital solutions
-      to life. Here are some of my key technical skills:
+      {strings.skills.technicalDescription}
     </p>
     <div class="contact-me--skills">
-      <SkillIcon icon="mdi:react" text="React" />
-      <SkillIcon icon="mdi:react" text="React Native" />
-      <SkillIcon icon="mdi:language-css3" text="CSS3" />
-      <SkillIcon icon="mdi:language-javascript" text="JavaScript" />
-      <SkillIcon icon="mdi:language-typescript" text="TypeScript" />
-      <SkillIcon icon="mdi:language-html5" text="HTML5" />
-      <SkillIcon icon="mdi:git" text="Git and Github" />
-      <SkillIcon icon="mdi:tailwind" text="Tailwind CSS" />
+      <SkillIcon icon="mdi:react" text={strings.skills.skills.react} />
+      <SkillIcon icon="mdi:react" text={strings.skills.skills.reactNative} />
+      <SkillIcon icon="mdi:language-css3" text={strings.skills.skills.css} />
+      <SkillIcon
+        icon="mdi:language-typescript"
+        text={strings.skills.skills.typescript}
+      />
+      <SkillIcon icon="mdi:language-html5" text={strings.skills.skills.html} />
+      <SkillIcon icon="mdi:git" text={strings.skills.skills.gitGithub} />
+      <SkillIcon icon="mdi:tailwind" text={strings.skills.skills.tailwind} />
+      <SkillIcon
+        icon="mdi:test-tube-empty"
+        text={strings.skills.skills.jestVitest}
+      />
     </div>
     <p>
-      Beyond technical skills, effective software development relies on strong
-      interpersonal abilities. Here are some of my key soft skills:
+      {strings.skills.softDescription}
     </p>
     <div class="contact-me--skills">
-      <SkillIcon icon="mdi:account-voice" text="English (C1)" />
-      <SkillIcon icon="mdi:account-voice" text="Spanish (Native)" />
-      <SkillIcon icon="mdi:search" text="Attention to detail" />
-      <SkillIcon icon="mdi:people-group" text="Leadership" />
+      <SkillIcon
+        icon="mdi:account-voice"
+        text={strings.skills.softSkills.english}
+      />
+      <SkillIcon
+        icon="mdi:account-voice"
+        text={strings.skills.softSkills.spanish}
+      />
+      <SkillIcon
+        icon="mdi:search"
+        text={strings.skills.softSkills.attentionToDetail}
+      />
+      <SkillIcon
+        icon="mdi:people-group"
+        text={strings.skills.softSkills.leadership}
+      />
     </div>
   </article>
   <article class="contact-me--section">
-    <h2 class="contact-me--title">Contact me</h2>
+    <h2 class="contact-me--title">{strings.contact.title}</h2>
     <p>
-      Have a question, a project in mind, or need a software developer? I'd love
-      to hear from you! Feel free to reach out through my LinkedIn or my email:
+      {strings.contact.description}
     </p>
     <div class="contact-me--buttons">
       <Button
         onPress="https://www.linkedin.com/in/thebryanmartinez/"
         type="primary"
-        text="Connect on LinkedIn"
+        text={strings.contact.buttons.linkedIn}
       />
       <Button
         onPress="mailto:bryanmartz972@gmail.com"
         type="secondary"
-        text="Send me an email"
+        text={strings.contact.buttons.email}
       />
     </div>
     <p>
-      I'm always eager to explore new opportunities and collaborate on exciting
-      projects. Don't hesitate to reach out—I'm looking forward to connecting
-      with you! If you're interested in exploring more of my work, you can check
-      my Github profile for a list of my projects.
+      {strings.contact.githubDescription}
     </p>
 
     <div class="contact-me--buttons">
       <Button
         onPress="https://github.com/thebryanmartinez"
         type="secondary"
-        text="Explore my Github"
+        text={strings.contact.githubButton}
       />
     </div>
   </article>
