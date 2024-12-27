@@ -1,25 +1,36 @@
 ---
 import Project from "@/components/Project.astro";
 import TodoListImage from "@/assets/images/todo-list-project.webp";
+import { default as strings } from "@/locales/en.json";
 ---
 
 <section id="projects">
-  <h2>Selected projects</h2>
-  <h3 class="subtitle">Here are some projects I’ve made</h3>
+  <h2>{strings.projects.title}</h2>
+  <h3 class="subtitle">{strings.projects.subtitle}</h3>
 
   <div class="container">
     <div class="projects--section">
       <Project
-        title="Todify • Todo List"
+        title={strings.projects.projects[0].title}
         image={TodoListImage}
-        imageAlt="Image of the Todo List project"
-        description="Built a user-friendly todo list app using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to create, mark as done, and delete tasks directly in their browsers. Simplifies task management with an intuitive interface for efficient organization."
+        imageAlt={strings.projects.projects[0].imageAlt}
+        description={strings.projects.projects[0].description}
         tags={[
-          { text: "React", backgroundColor: "blue" },
-          { text: "Tailwind CSS", backgroundColor: "pink" },
-          { text: "IndexedDB", backgroundColor: "yellow" },
+          {
+            text: strings.projects.projects[0].tags.react,
+            backgroundColor: "blue",
+          },
+          {
+            text: strings.projects.projects[0].tags.tailwind,
+            backgroundColor: "pink",
+          },
+          {
+            text: strings.projects.projects[0].tags.indexedDB,
+            backgroundColor: "yellow",
+          },
         ]}
-        projectHref="https://thebryanmartinez.github.io/todo-list/"
+        projectHref={strings.projects.projects[0].projectHref}
+        description="Built a user-friendly todo list app using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to create, mark as done, and delete tasks directly in their browsers. Simplifies task management with an intuitive interface for efficient organization."
       />
     </div>
   </div>

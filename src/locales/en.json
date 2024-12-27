@@ -1,0 +1,136 @@
+{
+  "header": {
+    "title": "Bryan Martinez",
+    "navigation": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "title": "Hello! I'm Bryan, a frontend software engineer.",
+    "descriptions": [
+      "My passion lies in building applications that not only meet users' needs but exceed their expectations.",
+      "I believe in starting with the 'why'—the driving force behind every line of code and design decision. For me, it's about more than just creating user-friendly and innovative applications; it's about crafting experiences that resonate deeply with users, keeping them coming back for more.",
+      "By prioritizing clean code and continuous learning in UI/UX design, I ensure that every application I develop has a strong core—one that fosters success, satisfaction, and retention. Through my journey, I've cultivated a working style rooted in flexibility, attention to detail, and impeccable time management, allowing me to thrive in diverse team environments.",
+      "Curious about how my development skills can benefit your company? Let's connect and explore the possibilities of working together!"
+    ],
+    "buttons": {
+      "linkedin": "Connect on LinkedIn",
+      "resume": "View resume"
+    }
+  },
+  "experience": {
+    "title": "Experience and education",
+    "professional": [
+      {
+        "institution": "FullStack Labs",
+        "role": "Mid Level Software Engineer",
+        "endYear": "Today",
+        "startYear": "2023",
+        "bulletPoints": [
+          "Implement and mantained unit tests for a design system using React",
+          "Review and contribute to the development of a design system"
+        ]
+      },
+      {
+        "institution": "Hello Iconic",
+        "role": "Junior Frontend Software Engineer",
+        "endYear": "2024",
+        "startYear": "2023",
+        "bulletPoints": [
+          "Developed and sent React and React Native applications for production deployments to the internet and to mobile app stores",
+          "Integrated third-party APIs for enhanced functionality, such as payment gateways and authentication services expanding the product capabilities",
+          "Collaborated with UX/UI designers to translate wireframes and mockups into interactive web applications"
+        ]
+      }
+    ],
+    "educational": [
+      {
+        "institution": "Hello Iconic",
+        "role": "QA Software Engineer - Internship",
+        "endYear": "2023",
+        "startYear": "2022",
+        "bulletPoints": [
+          "Conducted comprehensive testing of features and functionalities, granting approval for the successful deployment of multiple mobile application releases",
+          "Developed automated end-to-end tests for a web application using Cypress, achieving a test coverage of 78.5% and ensuring robust quality assurance",
+          "Established and managed a repository of 400+ test cases in TestRail, ensuring meticulous documentation and upholding stringent quality standards across applications"
+        ]
+      },
+      {
+        "institution": "Universidad Catolica de Honduras",
+        "role": "Computer Science Engineer",
+        "endYear": "2018",
+        "startYear": "2023",
+        "bulletPoints": [
+          "Achieved Magna Cum Laude honors Bachelor's degree in Computer Science, reflecting dedication to academic excellence and proficiency in subject matter",
+          "Led the creation of multiple projects, gaining practical skills and mastering modern technologies in the field"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Selected projects",
+    "subtitle": "Here are some side projects I've worked on",
+    "projects": [
+      {
+        "title": "Todify • Todo List",
+        "imageAlt": "Image of the Todo List project",
+        "description": "Built a user-friendly todo list app using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to create, mark as done, and delete tasks directly in their browsers. Simplifies task management with an intuitive interface for efficient organization.",
+        "tags": {
+          "react": "React",
+          "tailwind": "Tailwind CSS",
+          "indexedDB": "IndexedDB"
+        },
+        "projectHref": "https://thebryanmartinez.github.io/todo-list/"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "technicalDescription": "As a software developer, my technical expertise lies in a diverse range of tools, languages, and frameworks that enable me to bring digital solutions to life. Here are some of my key technical skills:",
+    "skills": {
+      "react": "React",
+      "reactNative": "React Native",
+      "css": "CSS3",
+      "tailwind": "Tailwind CSS",
+      "typescript": "TypeScript",
+      "html": "HTML",
+      "gitGithub": "Git and GitHub",
+      "jestVitest": "Jest and Vitest"
+    },
+    "softDescription": "Beyond technical skills, effective software development relies on strong interpersonal abilities. Here are some of my key soft skills:",
+    "softSkills": {
+      "english": "English (C1)",
+      "spanish": "Spanish (Native)",
+      "attentionToDetail": "Attention to Detail",
+      "leadership": "Leadership"
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Have a question, a project in mind, or need a software developer? I'd love to hear from you! Feel free to reach out through my LinkedIn or my email:",
+    "buttons": {
+      "linkedIn": "Connect on LinkedIn",
+      "email": "Send me an email"
+    },
+    "githubDescription": "I'm always eager to explore new opportunities and collaborate on exciting projects. Don't hesitate to reach out—I'm looking forward to connecting with you! If you're interested in exploring more of my work, you can check my Github profile for a list of my projects.",
+    "githubButton": "Explore my Github"
+  },
+  "footer": {
+    "title": "Copyright © 2025 | Bryan Martinez"
+  },
+  "keyboardManager": {
+    "label": "Press <kbd>Cmd</kbd> + <kbd>K</kbd> to open command palette.",
+    "sections": {
+      "projects": "Projects",
+      "social": "Social"
+    },
+    "links": {
+      "resume": "View my resume",
+      "github": "Explore my Github",
+      "linkedin": "Connect with me on LinkedIn"
+    }
+  }
+}

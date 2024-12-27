@@ -1,16 +1,28 @@
+---
+import { default as strings } from "@/locales/en.json";
+---
+
 <header class="header">
   <nav class="navigation">
-    <p class="navigation--title">BRYAN MARTINEZ</p>
+    <p class="navigation--title">{strings.header.title}</p>
     <ul class="navigation--links">
-      <li class="links--link"><a class="link-tag" href="#about">About</a></li>
       <li class="links--link">
-        <a class="link-tag" href="#experience">Experience</a>
+        <a class="link-tag" href="#about">{strings.header.navigation.about}</a>
       </li>
       <li class="links--link">
-        <a class="link-tag" href="#projects">Projects</a>
+        <a class="link-tag" href="#experience"
+          >{strings.header.navigation.experience}</a
+        >
       </li>
       <li class="links--link">
-        <a class="link-tag" href="#contact-me">Contact</a>
+        <a class="link-tag" href="#projects"
+          >{strings.header.navigation.projects}</a
+        >
+      </li>
+      <li class="links--link">
+        <a class="link-tag" href="#contact-me"
+          >{strings.header.navigation.contact}</a
+        >
       </li>
     </ul>
   </nav>
