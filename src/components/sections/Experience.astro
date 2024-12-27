@@ -8,9 +8,19 @@ import ExperienceArticle from "@/components/ExperienceArticle.astro";
   <div class="container">
     <div class="experience--section">
       <ExperienceArticle
-        institution="Hello Iconic"
-        role="Frontend Software Engineer"
+        institution="FullStack Labs"
+        role="Mid Level Software Engineer"
         endYear="Today"
+        startYear="2023"
+        bulletPoints={[
+          "Implement and mantained unit tests for a design system using React",
+          "Review and contribute to the development of a design system",
+        ]}
+      />
+      <ExperienceArticle
+        institution="Hello Iconic"
+        role="Junior Frontend Software Engineer"
+        endYear="2024"
         startYear="2023"
         bulletPoints={[
           "Developed and sent React and React Native applications for production deployments to the internet and to mobile app stores",
@@ -18,6 +28,8 @@ import ExperienceArticle from "@/components/ExperienceArticle.astro";
           "Collaborated with UX/UI designers to translate wireframes and mockups into interactive web applications",
         ]}
       />
+    </div>
+    <div class="experience--section">
       <ExperienceArticle
         institution="Hello Iconic"
         role="QA Software Engineer - Internship"
@@ -29,8 +41,6 @@ import ExperienceArticle from "@/components/ExperienceArticle.astro";
           "Established and managed a repository of 400+ test cases in TestRail, ensuring meticulous documentation and upholding stringent quality standards across applications",
         ]}
       />
-    </div>
-    <div class="experience--section">
       <ExperienceArticle
         institution="Universidad Catolica de Honduras"
         role="Computer Science Engineer"
