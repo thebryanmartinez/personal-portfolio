@@ -9,12 +9,11 @@
     }
   },
   "hero": {
-    "title": "Hello! I'm Bryan, a frontend software engineer.",
+    "title": "Hello! I'm Bryan, a <span id='highlight'>frontend</span> software engineer.",
     "descriptions": [
-      "My passion lies in building applications that not only meet users' needs but exceed their expectations.",
-      "I believe in starting with the 'why'—the driving force behind every line of code and design decision. For me, it's about more than just creating user-friendly and innovative applications; it's about crafting experiences that resonate deeply with users, keeping them coming back for more.",
-      "By prioritizing clean code and continuous learning in UI/UX design, I ensure that every application I develop has a strong core—one that fosters success, satisfaction, and retention. Through my journey, I've cultivated a working style rooted in flexibility, attention to detail, and impeccable time management, allowing me to thrive in diverse team environments.",
-      "Curious about how my development skills can benefit your company? Let's connect and explore the possibilities of working together!"
+      "I'm a passionate developer specializing in building intuitive, dynamic <span id='highlight'>web</span> and <span id='highlight'>mobile</span> experiences. With professional expertise in React, React Native, and TypeScript, I create applications that seamlessly combine <span id='highlight'>functionality and elegance.</span>",
+      "From crafting live class platforms for hundreds of users to developing fintech solutions that boost engagement, I thrive on turning ideas into <span id='highlight'>impactful</span>, <span id='highlight'>user-centered</span> products. Clean code, attention to detail, and a commitment to continuous improvement are at the core of my work.",
+      "I'm currently looking for part time opportunities and excitng projects to collaborate on. <span id='circle'>Hire me?</span>"
     ],
     "buttons": {
       "linkedin": "Connect on LinkedIn",
