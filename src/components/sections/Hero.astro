@@ -110,10 +110,11 @@ import { default as strings } from "@/locales/en.json";
   import { showAnnotations } from "@/utils/roughNotation";
 
   document.addEventListener("DOMContentLoaded", () => {
-    const highlights = document.querySelectorAll("#highlight");
+    const heroSection = document.querySelector("#about");
+    const highlights = heroSection.querySelectorAll("#highlight");
     const nodes = Array.from(highlights);
 
-    const hireMeCircle = annotate(document.querySelector("#circle"), {
+    const hireMeCircle = annotate(heroSection.querySelector("#circle"), {
       type: "circle",
       color: "var(--pink-pastel)",
     });

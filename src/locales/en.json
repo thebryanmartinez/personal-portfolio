@@ -76,7 +76,7 @@
       {
         "title": "Todify • Todo List",
         "imageAlt": "Image of the Todo List project",
-        "description": "Built a <span id='highlights'>user-friendly todo list app</span> using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to <span id='highlights'>create, mark as done, and delete tasks</span> directly in their browsers. Simplifies task management with an <span id='highlights'>intuitive interface</span> for efficient organization.",
+        "description": "Built a <span id='highlight'>user-friendly todo list app</span> using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to <span id='highlight'>create, mark as done, and delete tasks</span> directly in their browsers. Simplifies task management with an <span id='highlight'>intuitive interface</span> for efficient organization.",
         "tags": {
           "react": "React",
           "tailwind": "Tailwind CSS",
@@ -88,7 +88,7 @@
   },
   "skills": {
     "title": "Skills",
-    "technicalDescription": "As a software developer, my technical expertise lies in a diverse range of tools, languages, and frameworks that enable me to bring digital solutions to life. Here are some of my key technical skills:",
+    "technicalDescription": "As a software developer, my technical expertise lies in a diverse range of <span id='highlight'>tools, languages, and frameworks</span> that enable me to bring digital solutions to life. Here are some of my <span id='circle'>key technical skills</span>:",
     "skills": {
       "react": "React",
       "reactNative": "React Native",
@@ -99,7 +99,7 @@
       "gitGithub": "Git and GitHub",
       "jestVitest": "Jest and Vitest"
     },
-    "softDescription": "Beyond technical skills, effective software development relies on strong interpersonal abilities. Here are some of my key soft skills:",
+    "softDescription": "Beyond technical skills, effective software development relies on strong interpersonal abilities. Here are some of my <span id='circleSoftSkill'>key soft skills</span>:",
     "softSkills": {
       "english": "English (C1)",
       "spanish": "Spanish (Native)",
@@ -109,12 +109,12 @@
   },
   "contact": {
     "title": "Contact me",
-    "description": "Have a question, a project in mind, or need a software developer? I'd love to hear from you! Feel free to reach out through my LinkedIn or my email:",
+    "description": "Have a question, a project in mind, or need a software developer? <span id='highlight'>I'd love to hear from you!</span> Feel free to reach out through my <span id='highlight'>LinkedIn or my email</span>:",
     "buttons": {
       "linkedIn": "Connect on LinkedIn",
       "email": "Send me an email"
     },
-    "githubDescription": "I'm always eager to explore new opportunities and collaborate on exciting projects. Don't hesitate to reach out—I'm looking forward to connecting with you! If you're interested in exploring more of my work, you can check my Github profile for a list of my projects.",
+    "githubDescription": "I'm always eager to explore new opportunities and collaborate on exciting projects. Don't hesitate to reach out—I'm looking forward to connecting with you! If you're interested in exploring more of my work, you can <span id='highlight'>check my Github profile</span> for a list of my projects.",
     "githubButton": "Explore my Github"
   },
   "footer": {

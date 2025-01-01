@@ -64,11 +64,10 @@ import { default as strings } from "@/locales/en.json";
 
 <script>
   import { showAnnotations } from "@/utils/roughNotation";
-  import { default as strings } from "@/locales/en.json";
 
   document.addEventListener("DOMContentLoaded", () => {
     const projectsSection = document.querySelector("#projects");
-    const highlights = projectsSection.querySelectorAll("#highlights");
+    const highlights = projectsSection.querySelectorAll("#highlight");
     const nodes = Array.from(highlights);
 
     showAnnotations(nodes, "highlight");
