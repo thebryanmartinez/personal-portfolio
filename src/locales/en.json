@@ -76,7 +76,7 @@
       {
         "title": "Todify • Todo List",
         "imageAlt": "Image of the Todo List project",
-        "description": "Built a user-friendly todo list app using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to create, mark as done, and delete tasks directly in their browsers. Simplifies task management with an intuitive interface for efficient organization.",
+        "description": "Built a <span id='highlights'>user-friendly todo list app</span> using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to <span id='highlights'>create, mark as done, and delete tasks</span> directly in their browsers. Simplifies task management with an <span id='highlights'>intuitive interface</span> for efficient organization.",
         "tags": {
           "react": "React",
           "tailwind": "Tailwind CSS",
