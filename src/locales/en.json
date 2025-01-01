@@ -11,8 +11,8 @@
   "hero": {
     "title": "Hello! I'm Bryan, a <span id='highlight'>frontend</span> software engineer.",
     "descriptions": [
-      "I'm a passionate developer specializing in building intuitive, dynamic <span id='highlight'>web</span> and <span id='highlight'>mobile</span> experiences. With professional expertise in React, React Native, and TypeScript, I create applications that seamlessly combine <span id='highlight'>functionality and elegance.</span>",
-      "From crafting live class platforms for hundreds of users to developing fintech solutions that boost engagement, I thrive on turning ideas into <span id='highlight'>impactful</span>, <span id='highlight'>user-centered</span> products. Clean code, attention to detail, and a commitment to continuous improvement are at the core of my work.",
+      "I'm a passionate developer specializing in building intuitive, dynamic <span id='highlight'>web and mobile</span> experiences. With professional expertise in React, React Native, and TypeScript, I create applications that seamlessly combine <span id='highlight'>functionality and elegance.</span>",
+      "From crafting live class platforms for hundreds of users to developing fintech solutions that boost engagement, I thrive on turning ideas into <span id='highlight'>impactful</span>, <span id='highlight'>user-centered</span> products. <span id='highlight'>Clean code</span>, <span id='highlight'>attention to detail</span>, and a commitment to <span id='highlight'>continuous improvement</span> are at the core of my work.",
       "I'm currently looking for part time opportunities and excitng projects to collaborate on. <span id='circle'>Hire me?</span>"
     ],
     "buttons": {
@@ -25,8 +25,8 @@
     "professional": [
       {
         "institution": "FullStack Labs",
-        "role": "Mid Level Software Engineer",
-        "endYear": "Today",
+        "role": "<span id='underline'>Mid Level Software Engineer</span>",
+        "endYear": "<span id='underline'>Today</span>",
         "startYear": "2023",
         "bulletPoints": [
           "Implement and mantained unit tests for a design system using React",
@@ -35,7 +35,7 @@
       },
       {
         "institution": "Hello Iconic",
-        "role": "Junior Frontend Software Engineer",
+        "role": "<span id='underline'>Junior Frontend Software Engineer</span>",
         "endYear": "2024",
         "startYear": "2023",
         "bulletPoints": [
@@ -48,7 +48,7 @@
     "educational": [
       {
         "institution": "Hello Iconic",
-        "role": "QA Software Engineer - Internship",
+        "role": "<span id='underline'>QA Software Engineer - Internship</span>",
         "endYear": "2023",
         "startYear": "2022",
         "bulletPoints": [
@@ -59,7 +59,7 @@
       },
       {
         "institution": "Universidad Catolica de Honduras",
-        "role": "Computer Science Engineer",
+        "role": "<span id='underline'>Computer Science Engineering Graduate</span>",
         "endYear": "2018",
         "startYear": "2023",
         "bulletPoints": [

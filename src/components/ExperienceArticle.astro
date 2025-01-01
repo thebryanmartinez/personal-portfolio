@@ -13,9 +13,9 @@ const { institution, role, bulletPoints, startYear, endYear } = Astro.props;
 <article>
   <div class="experience--header">
     <h3>{institution}</h3>
-    <p>{startYear} - {endYear}</p>
+    <p set:html={`${startYear} - ${endYear}`} />
   </div>
-  <h4 class="experience--role">{role}</h4>
+  <h4 set:html={role} class="experience--role" />
   <ul>
     {bulletPoints.map((bulletPoint) => <li>{bulletPoint}</li>)}
   </ul>
@@ -32,3 +32,14 @@ const { institution, role, bulletPoints, startYear, endYear } = Astro.props;
     margin-bottom: 1rem;
   }
 </style>
+
+<script>
+  import { showAnnotations } from "@/utils/roughNotation";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const underline = document.querySelectorAll("#underline");
+    const nodes = Array.from(underline);
+
+    showAnnotations(nodes, "underline");
+  });
+</script>

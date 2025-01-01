@@ -21,8 +21,10 @@ export function showAnnotations(
   annotationType: RoughAnnotationType,
   individualAnnotations?: RoughAnnotation[],
 ) {
+  const annotationsId = crypto.randomUUID();
+
   nodes.forEach((node, index) => {
-    Object.defineProperty(window, `span${index + 1}`, {
+    Object.defineProperty(window, `span${annotationsId}${index + 1}`, {
       value: node,
       writable: false,
     });
@@ -33,9 +35,10 @@ export function showAnnotations(
   nodes.forEach((node, index) => {
     const randomColor =
       PASTEL_COLORS[Math.floor(Math.random() * PASTEL_COLORS.length)];
-    const annotation = annotate(window[`span${index + 1}`], {
+    const annotation = annotate(window[`span${annotationsId}${index + 1}`], {
       type: annotationType,
       color: randomColor,
+      multiline: true,
     });
     annotations.push(annotation);
   });
