@@ -17,10 +17,14 @@ import { default as strings } from "@/locales/en.json";
         width={100}
         height={100}
       />
-      <h1>{strings.hero.title}</h1>
+      <h1 set:html={strings.hero.title} />
     </div>
     <div class="hero--description-container">
-      {strings.hero.descriptions.map((description) => <p>{description}</p>)}
+      {
+        strings.hero.descriptions.map((description) => (
+          <p set:html={description} />
+        ))
+      }
     </div>
     <div class="buttons--container">
       <Button
@@ -100,3 +104,21 @@ import { default as strings } from "@/locales/en.json";
     }
   }
 </style>
+
+<script>
+  import { annotate } from "rough-notation";
+  import { showAnnotations } from "@/utils/roughNotation";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSection = document.querySelector("#about");
+    const highlights = heroSection.querySelectorAll("#highlight");
+    const nodes = Array.from(highlights);
+
+    const hireMeCircle = annotate(heroSection.querySelector("#circle"), {
+      type: "circle",
+      color: "var(--pink-pastel)",
+    });
+
+    showAnnotations(nodes, "highlight", [hireMeCircle]);
+  });
+</script>

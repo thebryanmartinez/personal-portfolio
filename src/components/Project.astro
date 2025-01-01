@@ -41,7 +41,7 @@ import ComingSoon from "@/components/ComingSoon.astro";
       }
     </div>
     <h3>{title}</h3>
-    <p>{description}</p>
+    <p set:html={description} />
   </a>
 </article>
 

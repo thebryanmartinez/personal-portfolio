@@ -31,6 +31,9 @@ importers:
       ninja-keys:
         specifier: ^1.2.2
         version: 1.2.2
+      rough-notation:
+        specifier: ^0.5.1
+        version: 0.5.1
     devDependencies:
       "@astrojs/partytown":
         specifier: ^2.0.4
@@ -3433,6 +3436,12 @@ packages:
     engines: { node: ">=18.0.0", npm: ">=8.0.0" }
     hasBin: true
 
+  rough-notation@0.5.1:
+    resolution:
+      {
+        integrity: sha512-ITHofTzm13cWFVfoGsh/4c/k2Mg8geKgBCwex71UZLnNuw403tCRjYPQ68jSAd37DMbZIePXPjDgY0XdZi9HPw==,
+      }
+
   run-parallel@1.2.0:
     resolution:
       {
@@ -6364,6 +6373,8 @@ snapshots:
       "@rollup/rollup-win32-ia32-msvc": 4.9.1
       "@rollup/rollup-win32-x64-msvc": 4.9.1
       fsevents: 2.3.3
+
+  rough-notation@0.5.1: {}
 
   run-parallel@1.2.0:
     dependencies:

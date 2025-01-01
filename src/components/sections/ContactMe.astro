@@ -7,9 +7,7 @@ import SkillIcon from "@/components/SkillIcon.astro";
 <section id="contact-me" class="contact-me">
   <article class="contact-me--section">
     <h2 class="contact-me--title">{strings.skills.title}</h2>
-    <p>
-      {strings.skills.technicalDescription}
-    </p>
+    <p set:html={strings.skills.technicalDescription} />
     <div class="contact-me--skills">
       <SkillIcon icon="mdi:react" text={strings.skills.skills.react} />
       <SkillIcon icon="mdi:react" text={strings.skills.skills.reactNative} />
@@ -26,9 +24,7 @@ import SkillIcon from "@/components/SkillIcon.astro";
         text={strings.skills.skills.jestVitest}
       />
     </div>
-    <p>
-      {strings.skills.softDescription}
-    </p>
+    <p set:html={strings.skills.softDescription} />
     <div class="contact-me--skills">
       <SkillIcon
         icon="mdi:account-voice"
@@ -50,9 +46,7 @@ import SkillIcon from "@/components/SkillIcon.astro";
   </article>
   <article class="contact-me--section">
     <h2 class="contact-me--title">{strings.contact.title}</h2>
-    <p>
-      {strings.contact.description}
-    </p>
+    <p set:html={strings.contact.description} />
     <div class="contact-me--buttons">
       <Button
         onPress="https://www.linkedin.com/in/thebryanmartinez/"
@@ -65,9 +59,7 @@ import SkillIcon from "@/components/SkillIcon.astro";
         text={strings.contact.buttons.email}
       />
     </div>
-    <p>
-      {strings.contact.githubDescription}
-    </p>
+    <p set:html={strings.contact.githubDescription} />
 
     <div class="contact-me--buttons">
       <Button
@@ -127,3 +119,35 @@ import SkillIcon from "@/components/SkillIcon.astro";
     }
   </style>
 </section>
+
+<script>
+  import { showAnnotations } from "@/utils/roughNotation";
+  import { annotate } from "rough-notation";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const contactMeSection = document.querySelector("#contact-me");
+    const highlights = contactMeSection.querySelectorAll("#highlight");
+    const nodes = Array.from(highlights);
+
+    const keyTechnicalSkillsCircle = annotate(
+      contactMeSection.querySelector("#circle"),
+      {
+        type: "circle",
+        color: "var(--blue-pastel)",
+      },
+    );
+
+    const keySoftSkillsCircle = annotate(
+      contactMeSection.querySelector("#circleSoftSkill"),
+      {
+        type: "circle",
+        color: "var(--yellow-pastel)",
+      },
+    );
+
+    showAnnotations(nodes, "highlight", [
+      keyTechnicalSkillsCircle,
+      keySoftSkillsCircle,
+    ]);
+  });
+</script>
