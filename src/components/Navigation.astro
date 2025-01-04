@@ -2,27 +2,37 @@
 import { default as strings } from "@/locales/en.json";
 ---
 
-<header class="header">
+<header id="navigation" class="header">
   <nav class="navigation">
     <p class="navigation--title">{strings.header.title}</p>
     <ul class="navigation--links">
       <li class="links--link">
-        <a class="link-tag" href="#about">{strings.header.navigation.about}</a>
+        <a
+          set:html={strings.header.navigation.about}
+          class="link-tag"
+          href="#about"
+        />
       </li>
       <li class="links--link">
-        <a class="link-tag" href="#experience"
-          >{strings.header.navigation.experience}</a
-        >
+        <a
+          set:html={strings.header.navigation.experience}
+          class="link-tag"
+          href="#experience"
+        />
       </li>
       <li class="links--link">
-        <a class="link-tag" href="#projects"
-          >{strings.header.navigation.projects}</a
-        >
+        <a
+          class="link-tag"
+          href="#projects"
+          set:html={strings.header.navigation.projects}
+        />
       </li>
       <li class="links--link">
-        <a class="link-tag" href="#contact-me"
-          >{strings.header.navigation.contact}</a
-        >
+        <a
+          class="link-tag"
+          href="#contact-me"
+          set:html={strings.header.navigation.contact}
+        />
       </li>
     </ul>
   </nav>
@@ -72,3 +82,75 @@ import { default as strings } from "@/locales/en.json";
     }
   }
 </style>
+
+<script>
+  import { annotate } from "rough-notation";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const navigationSection = document.querySelector("#navigation");
+    const aboutCircle = navigationSection.querySelector(
+      "#aboutCircle",
+    ) as HTMLElement;
+    const experienceCircle = navigationSection.querySelector(
+      "#experienceCircle",
+    ) as HTMLElement;
+    const projectsCircle = navigationSection.querySelector(
+      "#projectsCircle",
+    ) as HTMLElement;
+    const contactCircle = navigationSection.querySelector(
+      "#contactCircle",
+    ) as HTMLElement;
+
+    const aboutNotation = annotate(aboutCircle, {
+      type: "circle",
+      color: "var(--purple-pastel)",
+    });
+
+    const experienceNotation = annotate(experienceCircle, {
+      type: "circle",
+      color: "var(--pink-pastel)",
+    });
+
+    const projectsNotation = annotate(projectsCircle, {
+      type: "circle",
+      color: "var(--yellow-pastel)",
+    });
+
+    const contactNotation = annotate(contactCircle, {
+      type: "circle",
+      color: "var(--blue-pastel)",
+    });
+
+    aboutCircle.addEventListener("mouseenter", () => {
+      aboutNotation.show();
+    });
+
+    experienceCircle.addEventListener("mouseenter", () => {
+      experienceNotation.show();
+    });
+
+    projectsCircle.addEventListener("mouseenter", () => {
+      projectsNotation.show();
+    });
+
+    contactCircle.addEventListener("mouseenter", () => {
+      contactNotation.show();
+    });
+
+    aboutCircle.addEventListener("mouseleave", () => {
+      aboutNotation.hide();
+    });
+
+    experienceCircle.addEventListener("mouseleave", () => {
+      experienceNotation.hide();
+    });
+
+    projectsCircle.addEventListener("mouseleave", () => {
+      projectsNotation.hide();
+    });
+
+    contactCircle.addEventListener("mouseleave", () => {
+      contactNotation.hide();
+    });
+  });
+</script>
