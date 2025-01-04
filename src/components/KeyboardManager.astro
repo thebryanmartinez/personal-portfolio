@@ -88,6 +88,7 @@ const linksInformation = [
   }
 
   .keyboard-manager {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -104,5 +105,11 @@ const linksInformation = [
     animation: linear 0.3s fadeIn;
     animation-timeline: --revealing;
     animation-range: entry 100% cover 10%;
+  }
+
+  @media (min-width: 1024px) {
+    .keyboard-manager {
+      display: block;
+    }
   }
 </style>

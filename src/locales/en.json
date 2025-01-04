@@ -2,10 +2,10 @@
   "header": {
     "title": "Bryan Martinez",
     "navigation": {
-      "about": "About",
-      "experience": "Experience",
-      "projects": "Projects",
-      "contact": "Contact"
+      "about": "<span id='aboutCircle'>About</span>",
+      "experience": "<span id='experienceCircle'>Experience</span>",
+      "projects": "<span id='projectsCircle'>Projects</span>",
+      "contact": "<span id='contactCircle'>Contact</span>"
     }
   },
   "hero": {
