@@ -83,6 +83,18 @@
           "indexedDB": "IndexedDB"
         },
         "projectHref": "https://thebryanmartinez.github.io/todo-list/"
+      },
+      {
+        "title": "Blackjack • Blackjack quick game",
+        "imageAlt": "Image of the Blackjack quick game project",
+        "description": "Developed a <span id='highlight'>simple blackjack game</span> using React, Tailwind CSS, React i18next and API calls. Allows <span id='highlight'>playing against a CPU dealer, betting the amount of chips you want,</span> and having preferences like changing the table color and language.",
+        "tags": {
+          "react": "React",
+          "tailwind": "Tailwind CSS",
+          "api": "Deck of Cards API",
+          "localization": "React i18next"
+        },
+        "projectHref": "https://blackjack-self-six.vercel.app/"
       }
     ]
   },

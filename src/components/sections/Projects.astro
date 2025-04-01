@@ -1,6 +1,7 @@
 ---
 import Project from "@/components/Project.astro";
 import TodoListImage from "@/assets/images/todo-list-project.webp";
+import BlackjackImage from "@/assets/images/blackjack-game-project.webp";
 import { default as strings } from "@/locales/en.json";
 ---
 
@@ -31,6 +32,31 @@ import { default as strings } from "@/locales/en.json";
         ]}
         projectHref={strings.projects.projects[0].projectHref}
       />
+      <Project
+        title={strings.projects.projects[1].title}
+        image={BlackjackImage}
+        imageAlt={strings.projects.projects[1].imageAlt}
+        description={strings.projects.projects[1].description}
+        tags={[
+          {
+            text: strings.projects.projects[1].tags.react,
+            backgroundColor: "blue",
+          },
+          {
+            text: strings.projects.projects[1].tags.tailwind,
+            backgroundColor: "pink",
+          },
+          {
+            text: strings.projects.projects[1].tags.localization,
+            backgroundColor: "blue",
+          },
+          {
+            text: strings.projects.projects[1].tags.api,
+            backgroundColor: "yellow",
+          },
+        ]}
+        projectHref={strings.projects.projects[1].projectHref}
+      />
     </div>
   </div>
 </section>
@@ -57,8 +83,12 @@ import { default as strings } from "@/locales/en.json";
 
   .projects--section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4rem;
+
+    @media (max-width: 601px) {
+      flex-direction: column;
+    }
   }
 </style>
 
