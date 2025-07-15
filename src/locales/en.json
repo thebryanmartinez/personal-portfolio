@@ -143,5 +143,11 @@
       "github": "Explore my Github",
       "linkedin": "Connect with me on LinkedIn"
     }
+  },
+  "mobileNavigation": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
   }
 }
