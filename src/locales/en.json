@@ -75,7 +75,7 @@
     "projects": [
       {
         "title": "Todify • Todo List",
-        "imageAlt": "Image of the Todo List project",
+        "imageAlt": "To do application for creating todos with a white background and salmon interface",
         "description": "Built a <span id='highlight'>user-friendly todo list app</span> using React and Tailwind CSS. Integrated IndexedDB for local storage, allowing users to <span id='highlight'>create, mark as done, and delete tasks</span> directly in their browsers. Simplifies task management with an <span id='highlight'>intuitive interface</span> for efficient organization.",
         "tags": {
           "react": "React",
@@ -86,7 +86,7 @@
       },
       {
         "title": "Blackjack • Blackjack quick game",
-        "imageAlt": "Image of the Blackjack quick game project",
+        "imageAlt": "Blackjack application menu screenshot with three pixelated cards as a logo and buttons to start playing",
         "description": "Developed a <span id='highlight'>simple blackjack game</span> using React, Tailwind CSS, React i18next and API calls. Allows <span id='highlight'>playing against a CPU dealer, betting the amount of chips you want,</span> and having preferences like changing the table color and language.",
         "tags": {
           "react": "React",
