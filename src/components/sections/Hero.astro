@@ -1,6 +1,7 @@
 ---
 import image from "@/assets/images/profile-desktop.webp";
 import imageIcon from "@/assets/images/profile-mobile.webp";
+import resumePDF from "@/assets/images/BryanMartinezFrontendDeveloperResume.pdf";
 import { Image } from "astro:assets";
 import Button from "@/components/Button.astro";
 import { default as strings } from "@/locales/en.json";
@@ -32,7 +33,7 @@ import { default as strings } from "@/locales/en.json";
         onPress="https://www.linkedin.com/in/thebryanmartinez/"
         type="primary"
       />
-      <Button text={strings.hero.buttons.resume} onPress="" type="secondary" />
+      <Button text={strings.hero.buttons.resume} onPress={resumePDF} type="secondary" />
     </div>
   </article>
   <div class="hero--image-container">
