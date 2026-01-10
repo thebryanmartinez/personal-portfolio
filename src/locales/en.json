@@ -107,10 +107,10 @@
     "skills": {
       "react": "React",
       "reactNative": "React Native",
-      "css": "CSS3",
+      "nextjs": "NextJS",
       "tailwind": "Tailwind CSS",
       "typescript": "TypeScript",
-      "html": "HTML",
+      "storybook": "Storybook",
       "gitGithub": "Git and GitHub",
       "jestVitest": "Jest and Vitest"
     },
