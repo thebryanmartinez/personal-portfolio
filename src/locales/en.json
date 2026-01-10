@@ -27,10 +27,9 @@
         "institution": "FullStack Labs",
         "role": "<span id='underline'>Mid Level Software Engineer</span>",
         "endYear": "<span id='underline'>Today</span>",
-        "startYear": "2023",
-        "bulletPoints": [
-          "Implement and mantained unit tests for a design system using React",
-          "Review and contribute to the development of a design system"
+        "startYear": "2024",
+        "paragraphs": [
+          "I work on large-scale frontend systems where consistency and maintainability are critical. My focus has been on reducing technical and UI fragmentation by unifying codebases, design systems, and build workflows. I help teams turn complex, messy interfaces into calm, predictable experiences that scale across products and markets. Much of my work sits at the intersection of frontend architecture, UI quality, and long-term product health."
         ]
       },
       {
@@ -38,10 +37,17 @@
         "role": "<span id='underline'>Junior Frontend Software Engineer</span>",
         "endYear": "2024",
         "startYear": "2023",
-        "bulletPoints": [
-          "Developed and sent React and React Native applications for production deployments to the internet and to mobile app stores",
-          "Integrated third-party APIs for enhanced functionality, such as payment gateways and authentication services expanding the product capabilities",
-          "Collaborated with UX/UI designers to translate wireframes and mockups into interactive web applications"
+        "paragraphs": [
+          "I helped ship and scale multiple consumer-facing products in fintech and education, taking features from early concepts to production. The role required balancing speed with quality while working on real-time systems, mobile apps, and internal tools. I developed a strong product mindset here, learning how to make complex workflows feel intuitive and reliable for users."
+        ]
+      },
+      {
+        "institution": "Bluberry",
+        "role": "<span id='underline'>Freelance Frontend Developer</span>",
+        "endYear": "2025",
+        "startYear": "2024",
+        "paragraphs": [
+          "I was brought in to improve usability and reduce frontend technical debt in a growing product. My work focused on simplifying onboarding flows, clarifying dashboards, and refactoring brittle components. The goal was to make the product easier to use and easier for the team to maintain."
         ]
       }
     ],
@@ -51,10 +57,8 @@
         "role": "<span id='underline'>QA Software Engineer - Internship</span>",
         "endYear": "2023",
         "startYear": "2022",
-        "bulletPoints": [
-          "Conducted comprehensive testing of features and functionalities, granting approval for the successful deployment of multiple mobile application releases",
-          "Developed automated end-to-end tests for a web application using Cypress, achieving a test coverage of 78.5% and ensuring robust quality assurance",
-          "Established and managed a repository of 400+ test cases in TestRail, ensuring meticulous documentation and upholding stringent quality standards across applications"
+        "paragraphs": [
+          "I supported multiple product teams by strengthening testing processes and improving product reliability. I worked on test documentation, automated key user flows, and partnered closely with engineers to catch issues early. This role gave me a strong foundation in quality, edge cases, and user empathy — perspectives that continue to shape how I build frontend features today."
         ]
       },
       {
@@ -62,9 +66,8 @@
         "role": "<span id='underline'>Computer Science Engineering Graduate</span>",
         "endYear": "2018",
         "startYear": "2023",
-        "bulletPoints": [
-          "Achieved Magna Cum Laude honors Bachelor's degree in Computer Science, reflecting dedication to academic excellence and proficiency in subject matter",
-          "Led the creation of multiple projects, gaining practical skills and mastering modern technologies in the field"
+        "paragraphs": [
+          "Achieved Magna Cum Laude honors Bachelor's degree in Computer Science, reflecting dedication to academic excellence and proficiency in subject matter. Led the creation of multiple projects, gaining practical skills and mastering modern technologies in the field."
         ]
       }
     ]
